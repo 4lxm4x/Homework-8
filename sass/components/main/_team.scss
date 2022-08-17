@@ -1,0 +1,105 @@
+/* TEAM */
+
+.team {
+    /* width: 1200px; */
+    padding: 94px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 94px; */
+
+& .list.socials li:last-child {
+        margin-right: 0;
+    }
+
+&-section {
+    background-color: #f5f4fa;
+}
+
+
+
+& .section-header {
+    margin-bottom: 50px;
+}
+
+&>.list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+&>.list>li {
+    padding-bottom: 24px;
+    box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.3);
+}
+
+& .list li {
+    /* outline: 1px solid red; */
+    background-color: #fff;
+}
+
+&>.list>li:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+&>img {
+    margin-bottom: 30px;
+}
+
+& .name {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+& .position {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+}
+.list.socials {
+    display: flex;
+    justify-content: center;
+
+
+& li {
+    height: 44px;
+    padding: 12px;
+    margin-right: 10px;
+
+    border-radius: 50%;
+}
+
+& li:hover,
+& li:focus {
+    background-color: $accent-color;
+}
+
+
+
+& li:hover .icon,
+& li:focus .icon {
+    fill: #fff;
+}
+
+}
+
+.icon {
+    padding: 0;
+    border: none;
+    fill: #afb1b8;
+}

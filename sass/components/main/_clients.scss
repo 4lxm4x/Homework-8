@@ -1,0 +1,51 @@
+/* CLIENTS */ 
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+& .section-header {
+    margin-bottom: 50px;
+}
+
+& .list {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 94px; */
+}
+
+& .list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+& .list li {
+    @include centeredFlex ();
+    
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+      
+
+    width: 170px;
+    height: 90px;
+}
+
+&-logo {
+    fill: #afb1b8;
+    padding: 0;
+    border: none;
+}
+
+& .list li:hover,
+& .list li:focus {
+    border: 1px solid $accent-color;
+
+    & .clients-logo 
+    {
+    fill: $accent-color;
+    }
+}
+
+
+}

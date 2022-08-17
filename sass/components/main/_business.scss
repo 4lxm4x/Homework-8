@@ -1,0 +1,55 @@
+/* BUSINESS */
+.business {
+    padding-left: 15px;
+    padding-right: 15px;
+    // padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+
+
+& .list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+& .list>li {
+    margin-bottom: 0;
+    position: relative;
+    padding: 0;
+}
+
+& .list p {
+    @include centeredFlex ();
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    
+    width: 370px;
+    height: 70px;
+    
+    background-color: rgba(47, 48, 58, 0.8);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+& .list>li:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+
+
+& .section-header {
+    margin-bottom: 50px;
+}
+
+}
