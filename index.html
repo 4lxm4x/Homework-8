@@ -19,9 +19,9 @@
 <body>
       
     <header>
-        <div class="header-bar container">
+            <div class="header-bar container">
             <nav class="main-nav">
-                <a class="logo" href="./index.html"><span class="logo accent">Web</span> Studio</a>
+                <a class="logo" href="./index.html"><span class="logo-accent">Web</span> Studio</a>
                 <ul class="nav list">
                     <li><a class="nav-bar active" href="">Студия</a></li>
                     <li><a class="nav-bar" href="./portfolio.html">Портфолио</a></li>
@@ -115,9 +115,9 @@
     </div>
 
     <!--Hero-->
-    <section class="hero">
-        
-            <h1 class="hero-header">Эффективные решения <br> для вашего бизнеса</h1>
+    <section class="hero container">
+        <a href="test.html" class="test"><h1 class="hero-header">Эффективные решения <br> для вашего бизнеса</h1></a>
+            
             <button class="button" type="button" data-modal-open>Заказать услугу</button>
         
     </section>
@@ -207,7 +207,9 @@
             <h2 class="section-header">Наша команда</h2>
             <ul class="list">
                 <li>
-                    <img src="./images/photo-1.jpg" alt="Фото дизайнера продукта" />
+                    <div class="img">
+                        <img src="./images/photo-1.jpg" alt="Фото дизайнера продукта" />
+                    </div>
                     <h3 class="name">Николай Кучеренко</h3>
                     <p class="position" lang="en">Product designer</p>
                     <ul class="list socials">
@@ -220,7 +222,10 @@
                     </ul>
                 </li>
                 <li>
-                    <img src="./images/photo-2.jpg" alt="Фото фронтэнд разработчика" />
+                    <div class="img">
+                        <img src="./images/photo-2.jpg" alt="Фото фронтэнд разработчика" />
+
+                    </div>
                     <h3 class="name">Ольга Иванова</h3>
                     <p class="position" lang="en">Frontend developer</p>
                     <ul class="list socials">
@@ -239,7 +244,11 @@
                     </ul>
                 </li>
                 <li>
-                    <img src="./images/photo-3.jpg" alt="Фото маркетолога" />
+                    <div class="img">
+                        <img src="./images/photo-3.jpg" alt="Фото маркетолога" />
+
+                    </div>
+                    
                     <h3 class="name">Андрей Шевченко</h3>
                     <p class="position" lang="en">Marketing</p>
             
@@ -259,7 +268,11 @@
                     </ul>
                 </li>
                 <li>
-                    <img src="./images/photo-4.jpg" alt="Фото разработчика юзер интерфейса" />
+                    <div class="img">
+                        <img src="./images/photo-4.jpg" alt="Фото разработчика юзер интерфейса" />
+
+                    </div>
+                    
                     <h3 class="name">Иван Николаев</h3>
                     <p class="position" lang="en">UI designer</p>
                     <ul class="list socials">
@@ -306,9 +319,9 @@
         </ul>
     </section>
 </main>   
-    <footer class="footer-section">
+    <footer class="footer-section container">
         <div class="footer-address">
-            <a href="./index.html" class="logo"><span class="logo accent">Web</span>Studio</a>
+            <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
             <address>
                 <ul class="list">
                     <li>
@@ -344,7 +357,7 @@
                     
                     <p class="footer-appeal">Подпишитесь на рассылку</p>
                     <div class="subscribe-form">
-                        <form class="form">
+                        <form class="footer-form">
                             <input class="form-input" type="email" placeholder="E-mail">
                         </form>
                         <button class="button" type="button">Подписаться</button>

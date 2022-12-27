@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 a {
     text-decoration: none;
@@ -15,11 +20,26 @@ img {
 }
 
 .container {
-    width: 1200px;
+   
     padding-left: 15px;
     padding-right: 15px;
+    
+    // @media screen and (min-width:480px) {
+    //     width: 480px;
+    //@include}
 }
 
 .accent {
     color: $accent-color;
+}
+@media screen and (max-width: 320px) {
+    .container {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+    }
 }
