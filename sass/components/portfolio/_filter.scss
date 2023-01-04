@@ -4,11 +4,14 @@
     display: none;
 }
 
+
+
 .filter.list {
     margin-top: 93px;
     margin-bottom: 50px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    //justify-content: center;
 }
 
 

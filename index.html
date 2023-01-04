@@ -19,20 +19,27 @@
 <body>
       
     <header>
-            <div class="header-bar container">
-            <nav class="main-nav">
+            <div class="header-bar container" >
                 <a class="logo" href="./index.html"><span class="logo-accent">Web</span> Studio</a>
-                <ul class="nav list">
-                    <li><a class="nav-bar active" href="">Студия</a></li>
-                    <li><a class="nav-bar" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="nav-bar" href="./test.html">Контакты </a></li>
-                </ul>
-            </nav>
+            <div class="header-bar-nav" data-menu>
+                <nav class="main-nav">
+                
+                    <ul class="nav list">
+                        <li>
+                            <div class="nav-bar-container">
+                                <a class="nav-bar active" href="./index.html">Студия</a>
+                            </div>
+                    
+                            </li>
+                        <li><a class="nav-bar" href="./portfolio.html">Портфолио</a></li>
+                        <li><a class="nav-bar" href="./test.html">Контакты </a></li>
+                    </ul>
+                </nav>
                 <div class="contact">
                     <div class="mail">
                         <div class="envelope">
                             <svg class="icon" width="16px" height="11px">
-                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
                             </svg>
                         </div>
                         <a class="nav-bar" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -45,9 +52,21 @@
                         </div>
                         <a class="nav-bar tel" href="tel:+380961111111">+38 096 111 11 11</a>
                     </div>
-                    
+                
                 </div>
+            </div>
+
+            
+            <button class="mobile-nav" type="button" data-menu-button>
+                <svg class="burger" width="40px" height="40px">
+                    <use class="burger-menu" href="./images/burger.svg#burger-menu"></use>
+                    <use class="burger-cross" href="./images/burger.svg#burger-cross"></use>
+                </svg>
+                
+            </button>  
+            
         </div>
+        
     </header>
     
 <main>
@@ -321,7 +340,7 @@
 </main>   
     <footer class="footer-section container">
         <div class="footer-address">
-            <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
+            <a href="./index.html" class="logo"><span class="logo-accent">Web</span> Studio</a>
             <address>
                 <ul class="list">
                     <li>
@@ -366,6 +385,7 @@
 
     </footer>
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
 </body>   
 
 </html>

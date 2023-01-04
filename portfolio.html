@@ -20,38 +20,50 @@
 <body>
     <header>
         <div class="header-bar container">
-            <nav class="main-nav">
-                <a class="logo" href="./index.html"><span class="logo accent">Web</span> Studio</a>
-                <ul class="nav list">
-                    <li><a class="nav-bar" href="./index.html">Студия</a></li>
-                    <li><a class="nav-bar active" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="nav-bar" href="">Контакты </a></li>
-                </ul>
-            </nav>
-            <div class="contact">
-                <div class="mail">
-                    <div class="envelope">
-                        <svg class="icon" width="16px" height="11px">
-                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                        </svg>
-                    </div>
-                    <a class="nav-bar" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </div>
-                <div class="telephone">
-                    <div class="smartphone">
-                        <svg class="icon" width="10px" height="15px">
-                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                        </svg>
-                    </div>
-                    <a class="nav-bar tel" href="tel:+380961111111">+38 096 111 11 11</a>
-                </div>
+            <a class="logo" href="./index.html"><span class="logo-accent">Web</span> Studio</a>
+            <div class="header-bar-nav" data-menu>
+                <nav class="main-nav">
     
+                    <ul class="nav list">
+                        <li><a class="nav-bar" href="./index.html">Студия</a></li>
+                        <li><a class="nav-bar active" href="./portfolio.html">Портфолио</a></li>
+                        <li><a class="nav-bar" href="./test.html">Контакты </a></li>
+                    </ul>
+                </nav>
+                <div class="contact">
+                    <div class="mail">
+                        <div class="envelope">
+                            <svg class="icon" width="16px" height="11px">
+                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                            </svg>
+                        </div>
+                        <a class="nav-bar" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </div>
+                    <div class="telephone">
+                        <div class="smartphone">
+                            <svg class="icon" width="10px" height="15px">
+                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                            </svg>
+                        </div>
+                        <a class="nav-bar tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </div>
+    
+                </div>
             </div>
+    
+    
+            <button class="mobile-nav" type="button" data-menu-button>
+                <svg class="burger" width="40px" height="40px">
+                    <use class="burger-menu" href="./images/burger.svg#burger-menu"></use>
+                    <use class="burger-cross" href="./images/burger.svg#burger-cross"></use>
+                </svg>
+    
+            </button>
         </div>
-    </header>
+    </header>        
 <main>
     <!-- Projects gallery -->
-    <section class="gallery-section">
+    <section class="gallery-section container">
         <h1 class="section-header">Галерея проектов</h1>
         <ul class="filter list">
             <li class="filter-item"><button class="button active" type="button">Все</button></li>
@@ -182,53 +194,57 @@
     </section>
 
 </main>  
-<footer class="footer-section">
-    <div class="footer-address">
-        <a href="./index.html" class="logo"><span class="logo accent">Web</span>Studio</a>
-        <address>
-            <ul class="list">
-                <li>
-                    <a class="text address" href="https://goo.gl/maps/ZLEC8xDm6KNLiGq4A" target="_blank"
-                        rel="noopener noreferrer">г. Киев, ул. Леси Украинки, 26</a>
-                </li>
-                <li>
-                    <a class="text" href="mailto:info@example.com">info@example.com</a><br />
-                    <a class="text" href="tel:+380991111111">+38 099 111 11 11</a>
-                </li>
-            </ul>
-        </address>
-    </div>
-
-    <div class="footer-social">
-        <p class="footer-appeal">Присоединяйтесь</p>
-        <ul class="list socials">
-            <li><a href="http://instagram.com" aria-label="instagram" target="_blank"><svg class="icon" width=20px
-                        height=20px>
-                        <use href="./images/symbol-defs.svg#icon-insta"></use>
-                    </svg></a></li>
-            <li><a href="" aria-label="twitter"><svg class="icon" width=20px height=20px>
-                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg></li>
-            <li><a href="" aria-label="facebook"><svg class="icon" width=20px height=20px>
-                        <use href="./images/symbol-defs.svg#icon-fb"></use>
-                    </svg></a></li>
-            <li><a href="" aria-label="linkedin"><svg class="icon" width=20px height=20px>
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                    </svg></a></li>
-        </ul>
-    </div>
-    <div class="footer-subscribe">
-    
-        <p class="footer-appeal">Подпишитесь на рассылку</p>
-        <div class="subscribe-form">
-            <form class="form">
-                <input class="form-input" type="email" placeholder="E-mail">
-            </form>
-            <button class="button" type="button">Подписаться</button>
+    <footer class="footer-section container">
+        <div class="footer-address">
+            <a href="./index.html" class="logo"><span class="logo-accent">Web</span> Studio</a>
+            <address>
+                <ul class="list">
+                    <li>
+                        <a class="text address" href="https://goo.gl/maps/ZLEC8xDm6KNLiGq4A" target="_blank"
+                            rel="noopener noreferrer">г. Киев, ул. Леси Украинки, 26</a>
+                    </li>
+                    <li>
+                        <a class="text" href="mailto:info@example.com">info@example.com</a><br />
+                        <a class="text" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
         </div>
-    </div>
-
-</footer>
+    
+        <div class="footer-social">
+            <p class="footer-appeal">Присоединяйтесь</p>
+            <ul class="list socials">
+                <li><a href="http://instagram.com" aria-label="instagram" target="_blank"><svg class="icon" width=20px
+                            height=20px>
+                            <use href="./images/symbol-defs.svg#icon-insta"></use>
+                        </svg></a></li>
+                <li><a href="" aria-label="twitter"><svg class="icon" width=20px height=20px>
+                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                        </svg></li>
+                <li><a href="" aria-label="facebook"><svg class="icon" width=20px height=20px>
+                            <use href="./images/symbol-defs.svg#icon-fb"></use>
+                        </svg></a></li>
+                <li><a href="" aria-label="linkedin"><svg class="icon" width=20px height=20px>
+                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        </svg></a></li>
+            </ul>
+        </div>
+        <div class="footer-subscribe">
+    
+            <p class="footer-appeal">Подпишитесь на рассылку</p>
+            <div class="subscribe-form">
+                <form class="footer-form">
+                    <input class="form-input" type="email" placeholder="E-mail">
+                </form>
+                <button class="button" type="button">Подписаться</button>
+            </div>
+        </div>
+    
+    </footer>
+    
+<script src="./mobile-menu.js"></script>
 </body>    
+
+
 
 </html>

@@ -78,6 +78,12 @@ address {
     margin-right: auto;
     margin-left: auto;
     /* margin-bottom: 60px; */
+    & .logo {
+        color:#ffffff;
+        & .logo-accent {
+            color: $accent-color;
+        }
+    }
 }
 
 .footer-subscribe .button {
