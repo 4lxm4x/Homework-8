@@ -282,8 +282,9 @@ header {
   display: block;
   position: absolute;
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  margin: 0 0;
+  width: calc(100% - 2 * 15px);
+  height: 609px;
   top: 50%;
   left: 50%;
   background-color: #fff;
@@ -336,6 +337,12 @@ header {
   /* transition: transform 250ms linear; */
 }
 
+@media screen and (max-width: 497px) {
+  .modal .submit.button {
+    bottom: 28px;
+  }
+}
+
 .modal-title {
   font-weight: bold;
   font-size: 20px;
@@ -373,6 +380,25 @@ header {
   margin: 0;
   /* height: 40px; */
   margin-bottom: 28px;
+}
+
+.input.comment {
+  margin-bottom: 20px;
+}
+
+.agreement {
+  font-size: 12px;
+}
+
+.checkbox {
+  margin-right: 8px;
+  width: 15px;
+  height: 16px;
+}
+
+.agreement-link {
+  color: #2196f3;
+  text-decoration: underline;
 }
 
 .form-label {
@@ -459,6 +485,10 @@ body {
   margin: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 /*HERO */
 .hero {
   /* margin-bottom: 94px; */
@@ -487,8 +517,7 @@ body {
 }
 
 .hero .button,
-footer .button,
-.button .modal .submit.button {
+footer .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,6 +528,33 @@ footer .button,
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.submit.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  display: block;
   border: none;
   border-radius: 4px;
   width: 200px;

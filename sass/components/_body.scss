@@ -11,3 +11,7 @@ body {
     background-color: #fff;
     margin: 0;
 }
+
+body.modal-open {
+    overflow: hidden;
+}

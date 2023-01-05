@@ -46,6 +46,10 @@ body {
   margin: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 header {
   margin-left: auto;
   margin-right: auto;
@@ -582,8 +586,7 @@ address {
 }
 
 .hero .button,
-footer .button,
-.button .modal .submit.button {
+footer .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,6 +597,33 @@ footer .button,
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.submit.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  display: block;
   border: none;
   border-radius: 4px;
   width: 200px;
