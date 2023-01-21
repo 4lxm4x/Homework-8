@@ -5,9 +5,14 @@
     padding-right: 15px;
 }
 
+.gallery-section {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .project {
-    width: calc((100% - 2 * 30px) / 3);
-    /* outline: 1px solid red; */
+
+    
 
 & h2 {
         margin: 0;
@@ -48,7 +53,19 @@
 
 }
 
+@media screen and (min-width:$tablet) {
+    width: calc((100% - 4*15px) / 2);
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
 
+@media screen and (min-width:$desktop) {
+
+
+    width: calc((100% - 3 * 30px) / 3);
+    /* outline: 1px solid red; */
+}
 
 
 }
@@ -117,9 +134,28 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 60px;
+    padding-left: 0;
+    padding-right: 0;
 
 
+    @media screen and (min-width: $tablet) {
+
+        display: flex;
+        flex-wrap: wrap;
+        width: $tablet;
+        //justify-content: center;
+
+        
+    }
+
+        @media screen and (min-width: $desktop) {
     
+            
+            width: $desktop;
+            //justify-content: center;
+    
+    
+        }
 }
 
 

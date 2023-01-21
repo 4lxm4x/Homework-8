@@ -53,7 +53,13 @@
     padding: 40px;
     margin: 0 0;
 
-    width: calc(100% - 2 * 15px);
+    width: 450px;
+    @media screen and (min-width: $desktop) {
+
+        width: 528px;
+        
+    }
+
     height: 609px;
     top: 50%;
     left: 50%;

@@ -6,25 +6,29 @@ header {
     margin-right: auto;
     justify-content: center;
     border-bottom: 1px solid #ececec;
+    position: relative;
 
-    @media  screen and (max-width: 479px) {
+    // @media  screen and (max-width: 479px) {
 
-        position: relative;
-    }
+        
+    // }
 }
 
 /* HEADER */
 
 .nav.list {
     //display: none;
-    margin-left: 86px;
+    // margin-left: 86px;
     
-    & li:not(:last-child) {
-            margin-right: 50px;
-            position: relative;
-        }
+    // & li:not(:last-child) {
+    //         margin-right: 50px;
+    //         position: relative;
+    //     }
 
-                 @media screen and (max-width:479px) {
+                //  @media screen and (max-width:767px) {
+
+                    
+
                     display: block;
                     
                     margin-left: auto;
@@ -42,11 +46,31 @@ header {
                         {
                         margin-right: 0;
                         }
-                 }
+                 
+@media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        margin-right: 0;
+        text-align: center;
+        padding-left: 0px;
+
+
+
+    }
+
+    li:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+                        
+
+}
     
     
 
-}
+// }
 
 .logo {
     font-family: Raleway;
@@ -67,16 +91,25 @@ header {
 
 .header-bar-nav {
     display: none;
-    
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content:center;
+    }
+
 }
 
 .header-bar {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (min-width: $desktop) {
+      width: $desktop;  
+      //justify-content: left;
+      align-items: center;  
+    }
     
 
-    /* width: 1200px;
-  padding: 0px 15px; */
+    /* width: 1200px;  padding: 0px 15px; */
     /* align-items: center; */
     margin-left: auto;
     margin-right: auto;
@@ -84,11 +117,11 @@ header {
 
  .header-bar-nav.is-open {
 
-    @media screen and (max-width:479px) {
+    @media screen and (max-width: 767px) {
         position: absolute;
         display:block;
         background-color: #ffffff;
-        
+        z-index: 99;
         top: 100%;
         left:0;
         
@@ -106,16 +139,25 @@ header {
 .mobile-nav {
     background-color: #ffffff;
     border: 0;
+    
+   
+
 
     &.is-open {
         .burger-cross {
             display: block;
         }
         .burger-menu {
-            display:none;
+            display: none;
         }
     }
 }
+
+
+ @media screen and (min-width: $tablet) {
+    header button {display: none;}
+     
+ }
 
 .mobile-nav:focus, .mobile-nav:hover {
     .burger {
@@ -128,9 +170,27 @@ header {
     display: none;
 }
 
+@media screen and (min-width: $tablet) {
+    .burger {
+        display: none;
+    }
+}
+    .main-nav {
+        margin-left: 81px;
+        margin-right: 84px;
+        
+}
+
+
+
 .main-nav {
     display: flex;
     align-items: center;
+
+    @media screen and (min-width: $desktop) {
+            margin-left: 85px;
+                margin-right: 305px;
+            }
 }
 
 .nav-bar {  
@@ -144,12 +204,15 @@ header {
     padding-bottom: 31px;
     align-items: center;
     
-    @media screen and (max-width:479px)
+    @media screen and (max-width:767px)
     {
         font-size: 18px;
     }
 
-     
+     @media screen and (min-width: $tablet) {
+        padding-top: 0;
+        padding-bottom: 0;
+     }
 }
 
 
@@ -158,8 +221,11 @@ header {
     //display: none;
     // padding-top: auto;
     // padding-bottom: auto;
-    margin-left: auto;
-
+   
+// @media screen and (min-width: $tablet) {
+//         display: flex;
+//         flex-direction: column;
+//     }
 
  & .envelope {
     display: flex;
@@ -168,7 +234,7 @@ header {
 }
 
  & .smartphone {
-    margin-left: 50px;
+    //margin-left: 50px;
     display: flex;
     align-items: center;
     margin-right: 10px;
@@ -178,7 +244,9 @@ header {
     
 }
 
-@media screen and (max-width:479px) {
+
+
+// @media screen and (max-width:767px) {
     display: block;
     //justify-content: center;
     margin-left: auto;
@@ -191,8 +259,10 @@ header {
     }
 
 
+
+
 }
-}
+
 
 .tel,
 .mail .nav-bar {
@@ -205,17 +275,17 @@ header {
     color: $accent-color;
 }
 
-.nav-bar.active::after {
-    display: block;
-    content: "";
-    width: 100%;
+// .nav-bar.active::after {
+//     display: block;
+//     content: "";
+//     width: 100%;
 
-    border: 2px solid $accent-color;
-    border-radius: 2px;
-    position: absolute;
-    bottom: 0;
-    background-color: $accent-color;
-}
+//     border: 2px solid $accent-color;
+//     border-radius: 2px;
+//     position: absolute;
+//     bottom: 0;
+//     background-color: $accent-color;
+// }
 
 .mail,
 .telephone {
@@ -228,9 +298,49 @@ header {
      {
         fill: $accent-color;
         color: $accent-color;
+    
+    
+    
+    
     }
 
  
 
 }
 
+@media screen and (min-width: $tablet) {
+    .contact {
+        font-size: 12px;
+    
+    
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        margin: 21px 0;
+    }
+    .contact .telephone {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: left;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .contact {
+        font-size: 14px;
+        display: flex;
+        justify-content: left;
+        margin: 21px 0;
+        flex-direction:row;
+        align-items: center;
+
+         .telephone {
+                margin-left: 30px;
+                margin-right: 0;
+                
+                margin-top: 0;
+            }
+    }
+
+}
